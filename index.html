@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TourOn_Documentation</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <input type="checkbox" id="check" />
+    <label for="check">
+      <i class="fas fa-bars" id="btn"></i>
+      <i class="fas fa-times" id="cancel"></i>
+    </label>
+    <div class="sidebar">
+      <header>TourOn</header>
+      <header>Documentation</header>
+      <div class="title">Getting started</div>
+      <ul>
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#req_software">Required Software</a></li>
+        <li><a href="#favicon">Image & Favicon Settings</a></li>
+      </ul>
+      <div class="title">Edit pages</div>
+      <ul>
+        <li><a href="#home_page">Home page</a></li>
+        <li><a href="#about_page">About page</a></li>
+        <li><a href="#contact_page">Contact page</a></li>
+        <li><a href="">How it works page</a></li>
+        <li><a href="">Destination guide page</a></li>
+        <li><a href="">Login page</a></li>
+      </ul>
+    </div>
+    <section>
+      <div id="introduction">
+        <div>
+          <h1>Getting started</h1>
+          <h2>TourOn Travel Template</h2>
+          <img src="./images/intro.png" alt="" />
+        </div>
+        <h2>Introduction</h2>
+        <p>
+          TouOn is the perfect template if you like a clean and modern template.
+          This template is perfect for a travel website, travel Agency, travel
+          blog, tour operators, hotels, and various Travel…
+        </p>
+        <p>
+          The template will easily fit other topics, so this is a good start for
+          other businesses as well.
+        </p>
+        <h3>Main Features</h3>
+        <p>
+          REACT JS<br />
+          Clean, Creative, Modern &amp; Beautiful Design<br />
+          LESS<br />
+          Fully Responsive, Compatible with all screen sizes<br />
+          Well Organized Files<br />
+          Well Commented Code<br />
+          Easy Customization<br />
+          Major Browsers compatibility<br />
+          Well Documented<br />
+          Google Fonts Used<br />
+          Integrated Google Maps<br />
+          Integrated Custom Image and video Slider<br />
+          24/7 Friendly &amp; Quick Support<br />
+          And Much More
+        </p>
+      </div>
+      <div id="req_software">
+        <h2>Required Software</h2>
+        <h3>Text Editor</h3>
+        <p>
+          To modify this product you will require a text editor. There are a
+          wide range of softwares out there that will do the trick but we would
+          recommend&nbsp;<a
+            class="link"
+            href="https://code.visualstudio.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Visual Studio Code</a
+          >&nbsp;or&nbsp;<a
+            class="link"
+            href="https://www.sublimetext.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Sublime Text</a
+          ><span>..</span>
+        </p>
+      </div>
+      <div id="favicon">
+        <h2>Image &amp; Favicon Settings</h2>
+        <h3>Image Settings</h3>
+        <p>
+          Travelline download package does not contain images which are there in
+          our online demo. We are using placeholder images instead of real
+          images. You will see the image code as mentioned below. You can
+          replace placeholder image url with your image url like
+          <span class="selected">img/yourimage.jpg</span>
+        </p>
+        <pre>&lt;img src="image path" alt="image alt text"&gt;</pre>
+        <h3>Favicon Settings</h3>
+        <p>
+          To change the favicon image of your site, you need to load a new ICO
+          image in a site root or to point out a new address of the image.
+        </p>
+        <pre><span class="comment" style="color: #339966;">&lt;!-- favicon --&gt;</span>
+&lt;link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png"&gt;
+&lt;link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png"&gt;
+&lt;link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png"&gt;
+&lt;link rel="icon" type="image/png" sizes="16x16" href="img/favicons/android-chrome-192x192.png"&gt;
+&lt;link rel="icon" type="image/png" sizes="16x16" href="img/favicons/android-chrome-512x512.png"&gt;
+&lt;link rel="icon" type="image/png" href="img/favicons/favicon-32x32.png" sizes="32x32"&gt;
+&lt;link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon.ico"&gt;
+</pre>
+      </div>
+      <!-- homepage -->
+      <div id="home_page">
+        <h1>Edit pages</h1>
+        <h2>Home page</h2>
+        <!-- Navbar -->
+        <h3>Navbar</h3>
+        <img src="./images/navbar.png" alt="" />
+        <p>
+          A responsive horizontal navbar that can support images, links,
+          buttons, and dropdowns. In this website we used listing the navbar and
+          we use dipaly flex in css and also the logo.
+        </p>
+        <pre>
+   &lt;div className="header"&gt;
+     &lt;div className="logo"&gt;
+       &lt;img src={Image} alt=""&gt;
+     &lt;div&gt;
+       &lt;ul className="nav-area"&gt;
+         &lt;li className="nav-items"&gt;
+            &lt;Link to="/" className="nav-links"&gt;
+              Home
+            &lt;/Link&gt;
+        &lt;/li&gt;
+        &lt;li className="nav-items"&gt;
+            &lt;Link to="/about" className="nav-links"&gt;
+              About
+            &lt;/Link&gt;
+        &lt;/li&gt;
+      &lt;ul&gt;
+    &lt;/div&gt;
+          </pre
+        >
+        <!-- Slider image -->
+        <h3>Slider Image</h3>
+        <img src="./images/slide.png" alt="" />
+        <p>
+          Each slide has a class, a common class&nbsp;<strong>.slide</strong>,
+          as well as its unique class with a serial number:&nbsp;<strong
+            >slide-0, slide-1, slide-2, etc.</strong
+          >&nbsp;When you add a slide, you must also add a unique class. To
+          change the background image, you need to in the derivative block
+          .<strong>slider__bg</strong>&nbsp;change the path to the image in the
+          style attribute:
+        </p>
+        <pre>
+    &lt;div className="slider1 slide"&gt;
+        &lt;div className="trending"&gt;
+            &lt;h1 className="countryName">America&gt;/h1&gt;
+             &lt;h3 className="desc"&gt;
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Accusamus, doloribus.
+             &lt;/h3&gt;
+         &lt;div className="button"&gt;
+            &lt;div className="tour"&gt;
+                &lt;h4>Want a Personal tour&gt;/h4&gt;
+            &lt;/div&gt;
+            &lt;div className="ctour"&gt;
+                &lt;h4>Choose Tour&gt;/h4&gt;
+            &lt;/div&gt;
+         &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;</pre
+        >
+        <!-- Tour Categories -->
+        <h3>Tour Categories</h3>
+        <img src="./images/categories.png" alt="" />
+        <p>
+          Each tour category has a class, a common
+          class&nbsp;<strong>.category</strong>, as well as its unique class
+          with a serial number:&nbsp;<strong
+            >category-0, category-1, category-2, etc.</strong
+          >&nbsp;When you add a slide, you must also add a unique class. To
+          change the background image, you need to in the derivative block
+          .<strong>category__image</strong>&nbsp;change the path to the image in
+          the style attribute: In the tour categories, there are differnt tour
+          plans are allocted in that section. The user can select their own tour
+          categories and use it by their convinient. The all tour categories
+          having their own section to use it.
+        </p>
+        <pre>
+            &lt;div className="categories"&gt;
+                &lt;div className="cat-body"&gt;
+                  &lt;img className="image" src={cat4} alt="" /&gt;
+                  &lt;div className="title"&gt;
+                    &lt;p>Luxury&lt;/p&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div className="cat-body"&gt;
+                  &lt;img className="image" src={cat5} alt="" /&gt;
+                  &lt;div className="title"&gt;
+                    &lt;p>Honeymoon Tour&lt;/p&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;    
+        </pre>
+        <!-- Popular Tours -->
+        <h3>Popular Tours</h3>
+        <img src="./images/populartours.png" alt="" />
+        <img src="./images/populartours1.png" alt="" />
+        <p>
+          In the populartours section, the&nbsp;<strong>react slide</strong> is
+          used to slide the popular tours, and it is connected to the backend.
+          We used &nbsp;<strong>axios</strong> to fetch the data from the
+          backend.
+        </p>
+        <pre>
+&lt;div className="tour-slider-title"&gt;
+            &lt;p>popularly&lt;/p&gt;
+            &lt;h2&gt;
+              Most Popular &lt;br /&gt; Holiday Tours
+            &lt;/h2&gt;
+          &lt;/div&gt;
+          &lt;div&gt;
+            &lt;div className="ptour"&gt;
+              &lt;h4>View all Tour&lt;/h4&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div className="tour-slider-home"&gt;
+          &lt;div className="tour-slider"&gt;
+            &lt;Slider {...settings} accessibility pauseOnHover={false}&gt;
+              {tour.map((t, index) => {
+                return(
+                 &lt;PopulatTourTile t={t} key={index} /&gt;
+                )
+              })}
+            &lt;/Slider&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div className="benefits"&gt;
+          &lt;div className="item"&gt;
+            &lt;div className="item_img"&gt;
+              &lt;img src={home1} alt="" /&gt;
+            &lt;/div&gt;
+            &lt;div className="tc"&gt;
+              &lt;h3 className="item_title">Any route&lt;/h3&gt;
+              &lt;p className="item_text"&gt;
+                We will help you to make any route for travel
+              &lt;/p&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;</pre
+        >
+        <!-- Search tour -->
+        <h3>Search tour</h3>
+        <img src="./images/searchtour.png" alt="" />
+        <p>
+          In the search tour form, the clients able to search tour places by
+          giving their name & mobile no in <strong>input field</strong> using
+          <strong>submit</strong> button they can submit it. Then we reply the
+          client of theie convinience.
+        </p>
+        <pre>
+&lt;div className="search_form"&gt;
+            &lt;h1>Search tour&lt;/h1&gt;
+            &lt;p> Ready to rest? We are ready to help with the search&lt;/p&gt;
+            &lt;form className="searches"&gt;
+              &lt;div className="searchBox"&gt;
+                &lt;label>Name&lt;/label&gt;
+                &lt;input type="text" name="" required="name" /&gt;
+              &lt;/div&gt;
+              &lt;div className="searchBox"&gt;
+                &lt;label>Mobile no&lt;/label&gt;
+                &lt;input type="text" name="" required="name" /&gt;
+              &lt;/div&gt;
+            &lt;/form&gt;
+        &lt;/div&gt;</pre
+        >
+        <!-- Top Destination -->
+        <h3>Top Destination</h3>
+        <img src="./images/topdestination.png" alt="" />
+        <p>
+          The most popular top Destination are shown in this section. The top
+          destinaiton can be <strong>hover</strong> when the cursor is placed in
+          the top destination images.
+        </p>
+        <pre>
+ &lt;div className="section_subtitle">top destinations&lt;/div&gt;
+            &lt;div className="section_title">Touron - Operator&lt;/div&gt;
+              &lt;p className="text"&gt;
+                Etiam porta sem malesuada magna mollis euismod. Maecenas sed diam
+                eget risus varius blandit sit amet non magna. Vivamus sagittis
+                lacus vel augue laoreet rutrum faucibus dolor auctor
+              &lt;/p&gt;
+              &lt;div className="section_item"&gt;
+                {city.map((t, index) => {
+                   return( &lt;TopdestinationTile t={t} key={index} /&gt;
+                   )
+                })}
+              &lt;/div&gt;
+        </pre>
+        <!-- Footer -->
+        <h3>Footer</h3>
+        <p>
+          In the footer section our contact information are used, so the clients
+          can contact us through address or calling. Also we linked our
+          <strong>social media icons</strong> to see about experienced works.
+          The all tour plans also attached in the footer section.
+        </p>
+      </div>
+      <!-- about page -->
+      <div id="about_page">
+        <h2>About page</h2>
+        <img src="./images/about.png" alt="" />
+        <p>
+          The top of the about page contains navigation bar and the background
+          image is <strong>attached</strong> so it look nicely in going to below
+          content.
+        </p>
+        <pre>
+            &lt;span className="mr-2"&gt;
+                &lt;Link className="linkin" to="/"&gt;
+                  Home &lt;i className="fa fa-chevron-right"&gt;&lt;/i&gt;
+                &lt;/Link&gt;
+              &lt;/span&gt;
+              &lt;span className="abt"&gt;
+                About us &lt;i className="fa fa-chevron-right"&gt;&lt;/i&gt;
+              &lt;/span&gt;
+            &lt;/p&gt;
+            &lt;h1 className="mb-0 bread">About Us&lt;/h1&gt;
+        </pre>
+        <!-- about content -->
+        <h3>About content</h3>
+        <img src="./images/about_content.png" alt="" />
+        <p>Image - The left side image is a <strong>vector image</strong>.</p>
+        <p>
+          Button - The button is applied by the <strong>rgba</strong> of
+          differnt colors.
+        </p>
+        <pre>
+            &lt;div className="col-lg-7"&gt;
+                &lt;img className="intro_image" src={intro} alt="" /&gt;
+              &lt;/div&gt;
+              &lt;div className="intro_title"&gt;we have the best tours&lt;/div&gt;
+              &lt;p className="intro_text"&gt;
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
+                quis vulputate eros&lt;/p&gt;
+                &lt;div className="btns"&gt;
+                    &lt;a href="#"&gt;
+                      explore now&lt;/a&gt;
+                &lt;/div&gt;
+        </pre>
+        <!-- year_statistic -->
+        <h3>Year statistics</h3>
+        <img src="./images/year_stat.png" alt="" />
+        <p>
+          In the year statistics show the exact clients travel in a year by us.
+          The rating also mentioned by the process of
+          <strong>javascript language</strong>.
+        </p>
+        <p>
+          Icon - the icon used in the year statistics is a vector image icons.
+        </p>
+        <pre>
+            &lt;div className="section_title">years statistics&lt;/div&gt;
+            &lt;div className="stats_years"&gt;
+                &lt;div className="stats_years_last">2020&lt;/div&gt;
+                &lt;div className="stats_years_new float-right"&gt;2021&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div className="stats_last_content"&gt;
+                &lt;div className="stats_number"&gt;1642&lt;/div&gt;
+                &lt;div className="stats_type"&gt;Clients&lt;/div&gt;
+            &lt;/div&gt;
+        </pre>
+        <!-- testimonial -->
+        <h3>Testimonials</h3>
+        <img src="./images/testimonial.png" alt="" />
+        <p>Title - font-family: <strong>"Arizonia", cursive;</strong></p>
+        <p>Subtitle - font-family: <strong>"Poppins", sans-serif;</strong></p>
+        <p>
+          In the testimonial the <strong>react slider</strong> are used for the
+          client reviews. The about rating is an <strong>icon</strong>, and the
+          clients image are shaped by <strong>border radius</strong>used in css.
+        </p>
+        <pre>
+          &lt;span className="subheading1"&gt;Testimonial&lt;/span&gt;
+          &lt;h2 className="subheading"&gt;Tourist Feedback&lt;/h2&gt;
+          &lt;span className="fa fa-star"&gt;&lt;/span&gt;
+          &lt;div className="user_image"&gt;
+            &lt;img src={person1} alt="" /&gt;
+          &lt;/div&gt;
+          &lt;div className="user_name"&gt;
+            &lt;p className="name">Roger scott&lt;/p&gt;
+            &lt;p className="desti">Marketing Manager&lt;/p&gt;
+          &lt;/div&gt;
+        </pre>
+        <!-- Founder --->
+        <h3>Founder section</h3>
+        <img src="./images/founder.png" alt="" />
+        <p>Founder Name - text-transform: <strong>uppercase</strong></p>
+        <p>Description - font-family: <strong>"Andika", sans-serif;</strong></p>
+        <pre>
+            &lt;div&gt;
+            &lt;p className="hero_title">MR.VIKASH MANOHARAN CEO, FOUNDER&lt;/p&gt;
+            &lt;p className="hero_desc"&gt;
+            Founded in August of 2018, TourOn has since planned and lead more
+            than 200 dream tours. Vikash Manoharan, Founder of TourOn, is a
+            travel enthusiast and found TourOn to help&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;div className="hero_image"&gt;
+                &lt;img
+                  src="https://touron.in/assets/frontend/images/homepage/about-us-2.jpg"
+                  alt=""
+                /&gt;
+            &lt;/div&gt;
+        </pre>
+        <!-- team section -->
+        <h3>Team section</h3>
+        <img src="./images/team.png" alt="" />
+        <p>Title - font-family: <strong>'Abril Fatface', cursive;</strong></p>
+        <p>Team image - is adjust to fit in the team section</p>
+        <p>Font family - <strong>'Abril Fatface', cursive;</strong></p>
+        <pre>
+            &lt;div className="team_content1"&gt;
+                &lt;div className="team_img"&gt;
+                  &lt;img src={team3} alt="" /&gt;
+                &lt;/div&gt;
+                &lt;div className="teamk"&gt;
+                  &lt;div className="team_name">CEO, Co-Founder&lt;/div&gt;
+                  &lt;div className="team_desti">Vince Richardson&lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+        </pre>
+      </div>
+      <!-- contact page -->
+      <div id="contact_page">
+        <h2>Contact page</h2>
+        <img src="./images/contact.png" alt="" />
+        <p>
+          The top of the contact page contains navigation bar and the background
+          image is <strong>attached</strong> so it look nicely in going to below
+          content.
+        </p>
+        <pre>
+              &lt;span className="mr-2"&gt;
+                  &lt;Link className="linkin" to="/"&gt;
+                    Home &lt;i className="fa fa-chevron-right"&gt;&lt;/i&gt;
+                  &lt;/Link&gt;
+                &lt;/span&gt;
+                &lt;span className="abt"&gt;
+                  About us &lt;i className="fa fa-chevron-right"&gt;&lt;/i&gt;
+                &lt;/span&gt;
+              &lt;/p&gt;
+              &lt;h1 className="mb-0 bread">Contact Us&lt;/h1&gt;
+          </pre
+        >
+        <!-- contact address -->
+        <h3>Address section</h3>
+        <img src="./images/address_section.png" alt="" />
+        <p>In the above image, the <strong>react icon</strong> is used.</p>
+        <p>The address, contact number and Email are justify seperately.</p>
+        <pre>
+            &lt;div className="icon"&gt;
+                &lt;i className="fa fa-compass"&gt;&lt;/i&gt;
+              &lt;/div&gt;
+              &lt;h3 className="connect"&gt;Address&lt;/h3&gt;
+              &lt;p className="locate"&gt;
+                tour On Holidays,Workafella, Rathha Towers, Tek Meadows - A Block,
+                4th Floor, Opposite to Accenture, Sholinganallur, OMR, Chennai-119
+              &lt;/p&gt;
+        </pre>
+        <!-- Get in touch -->
+        <h3>Get in touch</h3>
+        <img src="./images/getintouch.png" alt="" />
+        <p>Input field - Name, Mobile number, Message are used.</p>
+        <p>
+          The contact form is used in the Get in Touch section, by using the
+          form the client can <strong>send mesage</strong> button to clarify
+          their doubts.
+        </p>
+        <pre>
+            &lt;div className="box"&gt;
+                &lt;h2&gt;Get in Touch&lt;/h2&gt;
+                &lt;form&gt;
+                  &lt;div className="inputBox"&gt;
+                    &lt;input type="text" name="" required="name" /&gt;
+                    &lt;label&gt;Name&lt;/label&gt;
+                  &lt;/div&gt;
+                  &lt;div className="inputBox"&gt;
+                    &lt;input type="text" name="" required="number" /&gt;
+                    &lt;label&gt;Mobile number&lt;/label&gt;
+                  &lt;/div&gt;
+                  &lt;div className="inputBox"&gt;
+                    &lt;textarea required="message" /&gt;
+                    &lt;label&gt;Message&lt;/label&gt;
+                  &lt;/div&gt;
+                  &lt;button className="bt"&gt;Send Message&lt;/button&gt;
+                &lt;/form&gt;
+              &lt;/div&gt;
+        </pre>
+      </div>
+    </section>
+    <script src="./js/smooth-scroll.js"></script>
+    <script>
+      var scroll = new SmoothScroll('a[href*="#"]');
+    </script>
+  </body>
+</html>
