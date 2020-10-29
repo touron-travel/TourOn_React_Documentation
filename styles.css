@@ -117,6 +117,7 @@ section {
   height: 100vh;
   margin-left: 250px;
   padding: 30px 40px;
+  margin-top: 0;
 }
 
 img {
@@ -166,7 +167,7 @@ strong {
   }
   label #btn,
   label #cancel {
-    position: absolute;
+    /* position: absolute; */
     cursor: pointer;
     background: #f15d30;
     border-radius: 3px;
@@ -178,12 +179,12 @@ strong {
     color: #000;
     padding: 6px 12px;
     transition: all 0.5s;
-    position: fixed;
+    position: sticky;
   }
   label #cancel {
     z-index: 1111;
     left: -195px;
-    top: 18px;
+    top: 35px;
     font-size: 25px;
     color: #000;
     padding: 4px 9px;
@@ -205,3 +206,8 @@ strong {
     margin-left: 250px;
   }
 }
+/* @media (max-width: 360px) {
+  .sidebar {
+    left: -100px;
+  }
+} */
